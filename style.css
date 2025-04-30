@@ -1,20 +1,35 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #a1a9fe;
-    color: #222;
+    background-color: #f6f7ff; /* Soft lavender background */
+    color: #000;
   }
   
   header {
-    background-color: #f7f7f7;
+    background-color: transparent;
     padding: 2rem;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e1e1e;
   }
   
   section {
+    background-color: #fff;
     padding: 2rem;
     max-width: 800px;
-    margin: auto;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   }
+  
+  a {
+    color: #a1a9fe; /* Lavender accent */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }  
