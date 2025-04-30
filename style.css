@@ -1,86 +1,107 @@
 body {
-    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4ff;
+    color: #000;
     margin: 0;
     padding: 0;
-    background-color: #f6f7ff; /* Soft lavender background */
-    color: #000;
+    line-height: 1.6;
   }
   
   header {
-    background-color: transparent;
-    padding: 2rem;
+    background-color: #fff;
     text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+    padding: 3rem 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
     color: #1e1e1e;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0.5rem;
   }
   
   section {
     background-color: #fff;
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: 2rem auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #1e1e1e;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
   }
   
   a {
-    color: #a1a9fe; /* Lavender accent */
+    color: #6b5de7;
     text-decoration: none;
   }
   
   a:hover {
     text-decoration: underline;
-  }  
-
-
+  }
+  
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 30px;
-    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 2rem;
   }
   
   .service-box {
-    text-align: center;
-    background-color: #f6f1fa; /* light lavender */
-    padding: 30px 20px;
+    background-color: #f1efff;
+    border: 1px solid #ddd6f7;
     border-radius: 16px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    border: 1px solid #ded3eb;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
   }
   
   .service-box:hover {
     transform: translateY(-5px);
-    background-color: #e9ddf5;
+    background-color: #e3ddfc;
   }
   
   .service-box i {
-    font-size: 40px;
-    color: #000; /* black icon */
-    margin-bottom: 15px;
-  }
-  
-  .service-box p {
-    margin: 0;
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 36px;
     color: #000;
-  }
-  
-  h2 {
-    font-weight: 600;
-    font-size: 24px;
-    color: #1e1e1e;
     margin-bottom: 1rem;
   }
   
-  p {
-    font-weight: 400;
-    font-size: 16px;
-    color: #333;
+  .service-box p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    color: #000;
   }
   
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 1px solid #eee;
+  }  
