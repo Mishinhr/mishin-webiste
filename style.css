@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -33,3 +33,54 @@ body {
   a:hover {
     text-decoration: underline;
   }  
+
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    padding: 20px 0;
+  }
+  
+  .service-box {
+    text-align: center;
+    background-color: #f6f1fa; /* light lavender */
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #ded3eb;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    background-color: #e9ddf5;
+  }
+  
+  .service-box i {
+    font-size: 40px;
+    color: #000; /* black icon */
+    margin-bottom: 15px;
+  }
+  
+  .service-box p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #1e1e1e;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+  }
+  
