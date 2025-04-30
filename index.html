@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mishin HR Consultants</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
+    /* Global Styles */
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #f6f7ff, #f0f4ff);
+      background-color: #f4f4ff;
       color: #000;
       margin: 0;
       padding: 0;
@@ -19,11 +21,10 @@
     }
 
     header {
-      background: linear-gradient(to right, #c9c6ff, #e3e1ff);
+      background-color: #fff;
       text-align: center;
       padding: 3rem 1rem 2rem;
-      border-bottom: 2px solid #ded3eb;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid #ddd;
     }
 
     .logo {
@@ -35,41 +36,93 @@
       font-size: 2.5rem;
       margin: 0;
       font-weight: 700;
-      color: #5e3ea1;
+      color: #1e1e1e;
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #6c63ff;
+      font-size: 1rem;
+      color: #666;
       margin-top: 0.5rem;
-      font-weight: 500;
     }
 
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ebeaff, #ffffff);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .btn-primary, .btn-secondary {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #6b5de7;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: #5948d6;
+    }
+
+    .btn-secondary {
+      background-color: #ddd;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background-color: #bbb;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Main Sections */
     section {
       background-color: #fff;
       padding: 2rem;
       max-width: 900px;
       margin: 2rem auto;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
     }
 
     h2 {
       font-size: 1.8rem;
-      color: #5e3ea1;
+      color: #1e1e1e;
       margin-bottom: 1rem;
       font-weight: 600;
-      position: relative;
-    }
-
-    h2::after {
-      content: "";
-      width: 60px;
-      height: 4px;
-      background: #a1a9fe;
-      display: block;
-      margin-top: 8px;
-      border-radius: 4px;
     }
 
     p {
@@ -79,14 +132,11 @@
     }
 
     a {
-      color: #5e3ea1;
+      color: #6b5de7;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #7a72df;
       text-decoration: underline;
     }
 
@@ -98,29 +148,33 @@
     }
 
     .service-box {
-      background-color: #f7f5ff;
-      border: 1px solid #ded3eb;
+      background-color: #f1efff;
+      border: 1px solid #ddd6f7;
       border-radius: 16px;
-      padding: 30px 20px;
+      padding: 2rem;
       text-align: center;
-      box-shadow: 0 6px 20px rgba(93, 63, 211, 0.05);
       transition: all 0.3s ease;
     }
 
     .service-box:hover {
-      transform: translateY(-8px);
-      background: #ebe7ff;
+      transform: translateY(-5px);
+      background-color: #e3ddfc;
     }
 
     .service-box i {
       font-size: 36px;
-      color: #5e3ea1;
-      margin-bottom: 12px;
+      color: #000;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .service-box:hover i {
+      transform: scale(1.2);
     }
 
     .service-box p {
-      font-size: 16px;
       font-weight: 600;
+      font-size: 1rem;
       margin: 0;
       color: #000;
     }
@@ -136,11 +190,19 @@
   </style>
 </head>
 <body>
+
   <header>
     <img src="Mishinlogo2.png" alt="Mishin Logo" class="logo" />
     <h1>Mishin HR Consultants</h1>
     <p>Your Mission is Our Mission</p>
   </header>
+
+  <section class="hero">
+    <h2>Your HR Ally for Growth-Driven Businesses</h2>
+    <p>Custom HR solutions that empower your team and scale your vision.</p>
+    <a href="#services" class="btn-primary">Explore Our Services</a>
+    <a href="#contact" class="btn-secondary">Book a Free Consult</a>
+  </section>
 
   <section id="about">
     <h2>About Us</h2>
@@ -177,13 +239,18 @@
     <p>Address: Ground Floor, Ganga Niwas, VM Road, JVPD, Mumbai, 400056</p>
     <p>Phone: +91-9560844393</p>
     <p>Follow us on:
-      <a href="https://www.linkedin.com/company/mishin">LinkedIn</a> |
-      <a href="https://www.instagram.com/mishin__official/">Instagram</a>
+      <a href="https://www.linkedin.com/company/mishin">LinkedIn</a> | <a href="https://www.instagram.com/mishin__official/">Instagram</a>
     </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Mishin HR Consultants. All Rights Reserved.</p>
   </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919560844393" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
 </body>
 </html>
