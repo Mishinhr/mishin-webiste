@@ -96,6 +96,31 @@ body {
     margin: 0;
     color: #000;
   }
+
+  .service-box {
+    background-image: url('/images/recruitment-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .service-box::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .service-box-content {
+    position: relative;
+    z-index: 2;
+  }
+  
   
   /* Enhanced WhatsApp Button */
 .whatsapp-float {
